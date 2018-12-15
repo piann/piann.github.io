@@ -1,0 +1,191 @@
+:root{
+    --mPadding: 15px;
+
+}
+body{
+    font-family: Helvetica;
+    background-color: #fafafc;
+}
+
+h1{
+    margin-top:30px;
+    padding-left: var(--mPadding);
+    margin-bottom: 35px;
+    font-size:28px;
+}
+
+
+
+.navigation{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:50px;
+
+}
+.navigation__list{
+    list-style-type:none;
+    padding:0;
+    display:grid;
+    grid-template-columns: repeat(4, 50px);
+    justify-content: center;
+    grid-gap:30px;
+    
+}
+
+.navigation__list .navigation__item{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-gap:10px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    transition: opacity 0.2s linear;
+}
+
+.navigation__list:hover .navigation__item{
+    opacity: 0.5;
+}
+
+.navigation__list .navigation__item:hover{
+    opacity: 1;
+}
+
+.navigation__list .navigation__item:hover .item__icon{
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.21),0 6px 6px 1px rgba(0, 0, 0, 0.23);
+}
+
+.navigation__item .item__icon{
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.08),0 6px 6px 1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width:50px;
+    font-size: 20px;
+    transition: box-shadow 2s linear;
+    cursor: pointer;
+}
+
+
+.navigation__item .item__text{
+    font-size:13px;
+    font-weight: 500;
+}
+
+.featured{
+    padding: var(--mPadding);
+    border-top:1px solid rgba(0,0,0,0.15);
+    
+}
+
+.featured .featured__title{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.featured .featured__wrapper{
+    overflow: scroll; 
+    display:grid;
+    grid-auto-columns: minmax(200px, 1fr);
+    grid-auto-flow: column;
+    grid-gap:50px;
+    padding-bottom:10px;
+
+}
+
+.featured__wrapper .featured-meal{
+    height: 200px;
+    background-color: gray;
+    border-radius: 15px;
+    display:flex;
+    align-items: flex-end;
+    padding:15px;
+    color:white;
+    justify-content: space-between;
+}
+
+.featured-meal__title{
+    margin-right: 10px;
+}
+
+.featured-meal__button{
+    background-color: rgba(200,200,200,0.9);
+    padding: 5px;
+    text-align: center;
+    font-weight: 600;
+    border-color:rgba(0,0,0,0);
+}
+
+.featured-meal:first-child{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://i.pinimg.com/564x/27/ee/01/27ee016ac97afbca71f56349289a4712.jpg");
+    background-size:cover;
+    background-position: center center;
+}
+
+
+.featured-meal:nth-child(2){
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("https://i.pinimg.com/564x/a4/53/fe/a453fe994bd6a1eb0a61be0afaa4f363.jpg");
+    background-size:cover;
+    background-position: center center;
+}
+.featured-meal:nth-child(3){
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("https://i.pinimg.com/564x/0f/af/0a/0faf0aec00dfe239e5257469a743e92a.jpg");
+    background-size:cover;
+    background-position: center center;
+}
+.featured-meal:nth-child(4){
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("https://i.pinimg.com/564x/f6/9c/db/f69cdb76c2c9d7742935bcbf3c770c09.jpg");
+    background-size:cover;
+    background-position: center center;
+}
+.featured-meal:nth-child(5){
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("https://i.pinimg.com/564x/ef/44/34/ef4434bfd51ed8de8cff2091883d9b0b.jpg");
+    background-size:cover;
+    background-position: center center;
+}
+.featured-meal:nth-child(6){
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("https://i.pinimg.com/564x/35/05/e7/3505e73f544426e76a67e8031446c082.jpg");
+    background-size:cover;
+    background-position: center center;
+}
+
+.recipes{
+    overflow-y: scroll;
+    overflow-x:hidden;
+    display:flex;
+    justify-content: center;
+}
+
+.recipes__list{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    display:grid;
+    grid-template-columns: 90vw;
+    grid-auto-rows: 60px;
+    grid-auto-flow:row;
+}
+
+.recipe{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(0,0,0,0.1);
+} 
+.recipe .recipe__btn{
+    height: 30px;
+    widows: 30px;
+    background-color: transparent;
+    border:none;
+    justify-self: flex-end;
+    cursor: pointer;
+    outline:none;
+}

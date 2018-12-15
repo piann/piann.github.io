@@ -51,6 +51,7 @@ header .header__column:first-child{
     grid-auto-rows:300px;
     grid-gap:15px;
     margin:15px;
+    margin-bottom:300px;
 }
 
 .grid .grid__item:first-child{

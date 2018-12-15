@@ -1,5 +1,5 @@
 # piann.github.io
 css practice
 
-[étude](project1.html)
+[étude 1](project1.html)
 

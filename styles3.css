@@ -19,7 +19,7 @@ body{
 }
 
 .header{
-    margin-top:50px;
+    margin-top:15px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -132,7 +132,7 @@ body{
 
 .recommended{
     height:calc(0.55*var(--mainHeight));
-    margin-bottom:70px;
+    margin-bottom:30px;
 }
 .recommended .recommended__header{
     display:flex;

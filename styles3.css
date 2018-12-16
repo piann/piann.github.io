@@ -127,12 +127,13 @@ body{
 
 .recommended{
     height:calc(0.55*var(--mainHeight));
+    margin-bottom:70px;
 }
 .recommended .recommended__header{
     display:flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: calc(0.1*var(--mainHeight));
+    margin-bottom: calc(0.15*var(--mainHeight));
 
 }
 

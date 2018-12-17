@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1{
-    font-size:33px;
+    font-size:27px;
 }
 
 h3{
@@ -41,8 +41,8 @@ h4{
     margin-right: 30px;
 }
 .header .header__menu-icon img{
-    width:30px;
-    height: 30px;
+    width:25px;
+    height: 25px;
 }
 
 .portfolio{

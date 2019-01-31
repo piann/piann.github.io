@@ -8,14 +8,13 @@ function combineTotal(arr) {
 }
 function calc(){
     
-var rawNumbers= parseFloat(document.getElementById('inputNumbers').value)
+var rawNumbers= document.getElementById('inputNumbers').value
 var iWantThis = parseFloat(document.getElementById('wantedNumber').value)
 
-var rawNumbersArr = rawNumbers.split(",")
-var numbers = []
-for (idx in rawNumbersArr){
-    number.push(parseFloat(rawNumbersArr[idx]));
-}
+console.log(rawNumbers);
+console.log(iWantThis);
+
+var numbers = rawNumbers.split(",").map(Number);
 
 //var numbers = [15.68, 15.83, 14.95, 16.53, 15.94, 15.97, 16.33, 15.39, 16.48, 16.19]
 //var iWantThis = 16.53;
@@ -39,8 +38,10 @@ for (var idx in combinedChoice){
     refCount += 1;
     alert(tempArr);
     }
-    if(refCount == 0){
-        alert("Can't find any answer.");
-    }
+    
+}
+
+if(refCount == 0){
+    alert("Can't find any answer.");
 }
 }

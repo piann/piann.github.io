@@ -1,9 +1,18 @@
 <html>
+
+<style>
+body {margin:200px, 200px}
+.enter1 {width:700px;}
+.enter2 {width:200px;}
+#nn {height:50px}
+</style>
 <body>
+    
     <script type="text/javascript" src="robot.js"></script>
-    <input type="text" name="numbers" placeholder="Numbers (ex: 111.3, 432.4 7676.4, 2344)" class="enter" value="" id="inputNumbers"/>
-    <input type="text" name="iWantThis" placeholder="Wanted Sum (ex: 2455.3)" class="enter" value="" id="wantedNumber"/>
-    <input type="button" value="click" OnClick="calc()"/>
+    <input type="text" name="numbers" placeholder="Numbers (ex: 111.3, 432.4 7676.4, 2344)" class="enter1" value="" id="inputNumbers"/>
+    <div id="nn"> ↓ <div/>
+    <input type="text" name="iWantThis" placeholder="Wanted Sum (ex: 2455.3)" class="enter2" value="" id="wantedNumber"/>
+    <input type="button" value="Let's find!" OnClick="calc()"/>
     
 </body>
 </html>
